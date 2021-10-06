@@ -5,9 +5,8 @@ import { useState } from 'react';
 export default function Layout({ children, meta: pageMeta }) {
   const [theme, setTheme] = useState('okaidia');
   const meta = {
-    title: 'Prism with Next.js',
-    description:
-      'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.',
+    title: 'GROUP F',
+    description: 'Node.js tutorial on building a simple joke API',
     cardImage:
       'https://og-image.now.sh/**Prism**%20with%20Next.js.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
     ...pageMeta
@@ -58,53 +57,7 @@ export default function Layout({ children, meta: pageMeta }) {
           rel="stylesheet"
         />
       </Head>
-      <nav>
-        <a href="#skip" className="sr-only focus:not-sr-only">
-          Skip to content
-        </a>
-        <div className="flex justify-between items-center p-8 mx-2">
-          <Link href="/">
-            <a className="no-underline font-semibold invisible sm:visible">
-              <h1>{meta.title}</h1>
-            </a>
-          </Link>
-          <ul className="flex justify-between items-center space-x-4">
-            <li>
-              <div className="inline-block relative w-32">
-                <select
-                  onChange={(e) => setTheme(e.target.value)}
-                  value={theme}
-                  className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
-                >
-                  <option value="okaidia">Okaidia</option>
-                  <option value="tomorrow">Tomorrow</option>
-                  <option value="coy">Coy</option>
-                  <option value="funky">Funky</option>
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                  <svg
-                    className="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/leerob/nextjs-prism-markdown"
-                className="no-underline font-semibold text-gray-700"
-              >
-                Source
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav className=""></nav>
       <div id="skip">
         <article
           className="prose lg:prose-xl px-8 m-auto my-4 sm:my-16"
