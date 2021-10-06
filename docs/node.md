@@ -6,7 +6,7 @@ To follow this tutorial, you will need the following installed on your machine:
 
 - [**Node.js**](https://nodejs.org/en/)
 
-Please download the starter project from the repository on [**Github**](https://github.com/dylanmooney62)
+Please download the [**starter files**](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/dylanmooney62/nodejs-tutorial/tree/main/starter-files) and open the directory in your favourite code editor.
 
 ---
 
@@ -26,7 +26,7 @@ Create a variable for the port the server will listen at.
 const port = 3000;
 ```
 
-Next, we'll create the web server using the `http.createServer` method. This method takes a callback that contains the request object response object.
+Next, we'll create the web server using the `http.createServer` method. This method takes a callback that contains the request object and response object.
 
 ```js
 const server = http.createServer((req, res) => {
@@ -259,6 +259,8 @@ If all was done correctly sending a request with the following url **localhost::
 ![Viewing specific joke from API on browser at localhost:3000](/images/joke-3.png)
 
 **🎉 Congratulations! 🎉** you have built your very first API using Node.js. 
+
+You can view the full source code for this tutorial from the [**Github repository**](https://github.com/dylanmooney62/nodejs-tutorial)
 
 ---
 
