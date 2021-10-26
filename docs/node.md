@@ -177,7 +177,7 @@ const server = http.createServer((req, res) => {
   // Set HTTP Header to application/json
   res.setHeader('Content-Type', 'application/json');
 
-  // If there user doesn't request a specific joke, send a random one
+  // If the user doesn't request a specific joke, send a random one
   if (req.url === '/') {
     // Generate number between 0 and the amount of jokes
     const random = Math.floor(Math.random() * jokes.length);
