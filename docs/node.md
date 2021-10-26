@@ -138,7 +138,7 @@ If all is done correctly, visiting the site on **localhost:3000** will display a
 
 Let's take this a step further. Let's allow the client the select a specific joke from a specified position in the jokes array. 
 
-For example, if the clients send a request to **localhost::3000/50**, we'll return the 50th Joke.
+For example, if the clients send a request to **localhost::3000/10**, we'll return the 10th Joke.
 
 First, tell the server only to send a random joke if the client doesn't request one. 
 
