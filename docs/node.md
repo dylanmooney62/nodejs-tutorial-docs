@@ -54,6 +54,8 @@ server.listen(port, () =>
 
 Run the node server with by entering `node index.js` in the terminal and visit the webserver on **localhost:3000**
 
+![Entering node index.js in the terminal](/images/terminal.png)
+
 ![Viewing web server on browser at localhost:3000](/images/hello-world.png)
 
 ---
