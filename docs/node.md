@@ -52,7 +52,7 @@ server.listen(port, () =>
 );
 ```
 
-Run the node server with command `node index.js` and visit the webserver on **localhost:3000**
+Run the node server with by entering `node index.js` in the terminal and visit the webserver on **localhost:3000**
 
 ![Viewing web server on browser at localhost:3000](/images/hello-world.png)
 
@@ -161,7 +161,7 @@ const server = http.createServer((req, res) => {
 });
 ```
 
-You can visit **localhost::3000** on the browser to ensure this still works. The server will hang if you send a request that doesn't request anything else in the pathname.
+You can visit **localhost::3000** on the browser to ensure this still works.
 
 ![Viewing joke from API on browser at localhost:3000](/images/joke-2.png)
 
