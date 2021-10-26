@@ -170,7 +170,7 @@ You can visit **localhost::3000** on the browser to ensure this still works.
 
 ## Parsing the URL
 
-Now, let's parse the parameter from the URL. First, we should check if the client sends a value that the server can parse to a number, and if it can't, we'll send back an error response.
+Now, let's parse the parameter from the URL. First, we should check if the client sends a value that the server can parse to a number, and if it can't, the server will send back an error response.
 
 ```js
 const server = http.createServer((req, res) => {
@@ -205,7 +205,7 @@ const server = http.createServer((req, res) => {
 
 ## Sending the Requested Joke
 
-Next we check if the joke exists, and if it doesn't, we will send a 404 Not Found Error. 
+Next we check if the joke exists, and if it doesn't, the server will send a 404 Not Found Error. 
 
 If the joke exists, the server will send the client the joke with the matching index.
 
